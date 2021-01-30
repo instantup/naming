@@ -12,13 +12,20 @@ import (
 type Naming func(name string) string
 
 var (
-	Flat       = CreateNaming(strings.ToLower, strings.ToLower, "")  // flatcase.
-	Upper      = CreateNaming(strings.ToUpper, strings.ToUpper, "")  // UPPERCASE.
-	Mixed      = CreateNaming(strings.ToLower, ToTitle, "")          // mixedCase.
-	UpperMixed = CreateNaming(ToTitle, ToTitle, "")                  // MixedCase.
-	Snake      = CreateNaming(strings.ToLower, strings.ToLower, "_") // snake_case.
-	UpperSnake = CreateNaming(strings.ToUpper, strings.ToUpper, "_") // SNAKE_CASE.
-	Kebab      = CreateNaming(strings.ToLower, strings.ToLower, "-") // kebab-case.
+	// Flat converts names to flatcase.
+	Flat = CreateNaming(strings.ToLower, strings.ToLower, "")
+	// Upper converts names to UPPERCASE.
+	Upper = CreateNaming(strings.ToUpper, strings.ToUpper, "")
+	// Mixed converts names to mixedCase
+	Mixed = CreateNaming(strings.ToLower, ToTitle, "")
+	// UpperMixed converts names to MixedCase
+	UpperMixed = CreateNaming(ToTitle, ToTitle, "")
+	// Snake converts names to snake_case
+	Snake = CreateNaming(strings.ToLower, strings.ToLower, "_")
+	// UpperSnake converts names to SNAKE_CASE
+	UpperSnake = CreateNaming(strings.ToUpper, strings.ToUpper, "_")
+	// Kebab converts names to kebab-case
+	Kebab = CreateNaming(strings.ToLower, strings.ToLower, "-")
 )
 
 // CreateNaming creates a Naming function. The function mapFirst is called to

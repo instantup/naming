@@ -1,8 +1,6 @@
 # Package `naming`
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/instantup/naming.svg)](https://pkg.go.dev/github.com/instantup/naming)
-
----
+[![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/instantup/naming/Build/master?style=flat-square)](https://github.com/instantup/naming/actions?query=workflow:Build+branch:master) [![Go Report Card](https://goreportcard.com/badge/github.com/instantup/naming?style=flat-square)](https://goreportcard.com/report/github.com/instantup/naming) [![Go Reference](https://pkg.go.dev/badge/github.com/instantup/naming)](https://pkg.go.dev/github.com/instantup/naming)
 
 ## Installation
 
